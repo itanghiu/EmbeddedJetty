@@ -3,7 +3,7 @@
     "http://www.w3.org/TR/html4/loose.dtd">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Crunchify JSP Servlet Example</title>
+<title>Embedded Jetty Example</title>
 </head>
 <body>
     <div align="center" style="margin-top: 50px;">
