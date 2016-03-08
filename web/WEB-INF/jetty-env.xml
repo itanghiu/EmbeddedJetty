@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN"
+        "http://jetty.mortbay.org/configure.dtd">
+<Configure id="wac" class="org.mortbay.jetty.webapp.WebAppContext">
+
+    <!-- Connection MySQL via un pool -->
+    <New id="myDs" class="org.mortbay.jetty.plus.naming.Resource">
+        <Arg>
+            <Ref id='wac'/>
+        </Arg>
+        <Arg>jdbc/MySqlDs</Arg>
+        <Arg>
+            <New id="DSTest" class="org.apache.commons.dbcp.BasicDataSource">
+                <Set name="driverClassName">com.mysql.jdbc.Driver</Set>
+                <Set name="url">jdbc:mysql://127.0.0.1:3306/MCBASE?useUnicode=true&amp;characterEncoding=UTF-8</Set>
+                <Set name="username">MCADMIN</Set>
+                <Set name="password">mcadmin1968</Set>
+                <Set name="maxActive">20</Set>
+                <Set name="maxIdle">30</Set>
+                <Set name="maxWait">10000</Set>
+                <Set name="validationQuery">select 1</Set>
+            </New>
+        </Arg>
+    </New>
+</Configure>
