@@ -11,9 +11,6 @@ import java.io.IOException;
  */
 public class AuthenticateServlet extends HttpServlet {
 
-    public AuthenticateServlet() {
-    }
-
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String username = request.getParameter("username");
