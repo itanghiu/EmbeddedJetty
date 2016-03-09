@@ -13,8 +13,8 @@
             <New id="DSTest" class="org.apache.commons.dbcp.BasicDataSource">
                 <Set name="driverClassName">com.mysql.jdbc.Driver</Set>
                 <Set name="url">jdbc:mysql://127.0.0.1:3306/MCBASE?useUnicode=true&amp;characterEncoding=UTF-8</Set>
-                <Set name="username">MCADMIN</Set>
-                <Set name="password">mcadmin1968</Set>
+                <Set name="username">ADMIN</Set>
+                <Set name="password">mypassword</Set>
                 <Set name="maxActive">20</Set>
                 <Set name="maxIdle">30</Set>
                 <Set name="maxWait">10000</Set>

@@ -27,11 +27,6 @@ public class StartJettyServer {
         webAppContext.setDescriptor("web/WEB-INF/web.xml");
         webAppContext.setParentLoaderPriority(true);
 
-        // makes jetty aware of jetty-env.xml
-        EnvConfiguration envConfig = new EnvConfiguration();
-        File jettyEnvFile = new File("web/WEB-INF/jetty-env.xml");
-        envConfig.setJettyEnvXml(jettyEnvFile.toURI().toURL());
-
         // This webapp will use jsps and jstl. We need to enable the
         // AnnotationConfiguration in order to correctly set up the jsp container
         Configuration.ClassList classlist = Configuration.ClassList.setServerDefault( server );
