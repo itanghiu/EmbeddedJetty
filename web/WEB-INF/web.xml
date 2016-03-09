@@ -11,7 +11,7 @@
     </welcome-file-list>
 
     <servlet>
-        <servlet-name>AuthenticateServlet</servlet-name>
+        <servlet-name>AuthenticationServlet</servlet-name>
         <servlet-class>
             com.foryousoft.embeddedjetty.AuthenticateServlet
         </servlet-class>
@@ -19,7 +19,7 @@
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>AuthenticateServlet</servlet-name>
+        <servlet-name>AuthenticationServlet</servlet-name>
         <url-pattern>/Authenticate</url-pattern>
     </servlet-mapping>
 
